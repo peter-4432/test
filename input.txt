@@ -1,0 +1,17 @@
+file=open('aviation', 'w')
+file.write('Aviation is my dream career')
+file.write('Countries are developing')
+file.write('Playing basketball is a hobby')
+file.write('Real friendship exists')
+file.write('I have a laptop')
+with open('input.txt', 'r')
+content=f.read()
+word_count=len(content.split())
+processed_text=content.upper
+
+f = open('output.txt', 'x')
+file.write('Aviation is my dream career')
+file.write('countries are developing')
+file.write('Playing basketball is my hobby')
+file.write(real friendship exists')
+file.write('I have a laptop')

@@ -1,0 +1,10 @@
+def read_and_write():
+    try:
+        with open('input.txt','r') as infile:
+        content=infile.read()
+        modiffied_content=content.upper()
+        with open('output.txt','w') as outfile:
+        outfile.write(modiffied_content)
+        print (file processed succesfully!check output.txt')
+        except file not found error:
+        
