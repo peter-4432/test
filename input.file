@@ -6,5 +6,7 @@ def read_and_write():
         with open('output.txt','w') as outfile:
         outfile.write(modiffied_content)
         print (file processed succesfully!check output.txt')
-        except file not found error:
-        
+        except file not found error:print('input.txt not found .please create the file first.')
+        if _name_=='_main_':
+        read_and_write()
+    
