@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aircraft Maintenance Basics | Aviation Safety</title>
+    <meta name="description" content="Learn the basics of aircraft maintenance, importance, and key roles in aviation safety">
+</head>
+<body>
+    <!-- Page Header -->
+    <header>
+        <h1>Aircraft Maintenance Basics</h1>
+        <p>Understanding the fundamentals of aircraft maintenance and safety</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <h2>Page Sections</h2>
+        <ul>
+            <li><a href="#importance">Why Maintenance Matters</a></li>
+            <li><a href="#roles">Maintenance Roles</a></li>
+            <li><a href="#types">Maintenance Types</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Importance Section -->
+        <section id="importance">
+            <h2>Why Aircraft Maintenance Matters</h2>
+            <p>Aircraft maintenance is essential for flight safety and reliability. Regular maintenance helps prevent accidents and ensures aircraft operate efficiently.</p>
+            
+            <h3>Key Benefits:</h3>
+            <ul>
+                <li>Prevents mechanical failures</li>
+                <li>Ensures passenger safety</li>
+                <li>Meets legal requirements</li>
+                <li>Extends aircraft life</li>
+                <li>Reduces operating costs</li>
+            </ul>
+        </section>
+
+        <!-- Roles Section -->
+        <section id="roles">
+            <h2>Key Maintenance Roles</h2>
+            <p>Different professionals work together to maintain aircraft safety.</p>
+            
+            <article>
+                <h3>Maintenance Engineers</h3>
+                <p>They repair and inspect aircraft systems. Their work includes:</p>
+                <ul>
+                    <li>Fixing mechanical issues</li>
+                    <li>Testing aircraft systems</li>
+                    <li>Replacing worn parts</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Inspectors</h3>
+                <p>They check that all work meets safety standards. Their duties include:</p>
+                <ul>
+                    <li>Quality control checks</li>
+                    <li>Reviewing maintenance records</li>
+                    <li>Approving aircraft for flight</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Planners</h3>
+                <p>They organize maintenance schedules. Their responsibilities include:</p>
+                <ul>
+                    <li>Scheduling maintenance work</li>
+                    <li>Coordinating teams and parts</li>
+                    <li>Tracking maintenance deadlines</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Types Section -->
+        <section id="types">
+            <h2>Types of Aircraft Maintenance</h2>
+            <p>Maintenance happens at different intervals and levels.</p>
+            
+            <h3>Routine Checks</h3>
+            <ul>
+                <li><strong>Daily Checks:</strong> Quick inspections before each flight</li>
+                <li><strong>Weekly Checks:</strong> More detailed system checks</li>
+                <li><strong>Monthly Checks:</strong> Comprehensive inspections</li>
+            </ul>
+
+            <h3>Major Maintenance</h3>
+            <ul>
+                <li><strong>A Checks:</strong> Every 500-800 flight hours</li>
+                <li><strong>C Checks:</strong> Every 20-24 months</li>
+                <li><strong>D Checks:</strong> Major overhaul every 6-10 years</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Additional Information -->
+    <aside>
+        <h2>Quick Facts</h2>
+        <p>Aircraft maintenance follows strict international safety standards set by organizations like the FAA and EASA.</p>
+    </aside>
+
+    <!-- Page Footer -->
+    <footer>
+        <h2>Contact Information</h2>
+        <p>Aviation Training Center</p>
+        <p>Email: training@aviation.example.com</p>
+        <p>Phone: (555) 123-4567</p>
+        <p>&copy; 2023 Aviation Basics. All rights reserved.</p>
+    </footer>
+</body>
+</html>
