@@ -1,0 +1,58 @@
+/* ===== BASIC PAGE STYLING ===== */
+/* Sets up the overall look of the page */
+body {
+  font-family: Arial, sans-serif;  /* Choose the font for text */
+  background-color: #ffffff;       /* White background */
+  color: #333;                     /* Dark gray text color */
+  margin: 0;                       /* Remove browser default spacing */
+  padding: 0;                      /* Remove browser default spacing */
+}
+
+/* ===== HEADER STYLING ===== */
+/* Styles the top section of the page */
+header {
+  background-color: #000000;       /* Black background */
+  color: white;                    /* White text */
+  text-align: center;              /* Center the text */
+  padding: 20px;                   /* Space inside header */
+  margin-bottom: 20px;             /* Space below header */
+}
+
+/* ===== CARD STYLING ===== */
+/* Creates boxed sections with visual effects */
+.card {
+  background-color: white;         /* White background */
+  border: 2px solid #000000;       /* Black border around the box */
+  padding: 15px;                   /* Space inside the box (around content) */
+  margin: 20px;                    /* Space outside the box (between cards) */
+  border-radius: 8px;              /* Rounded corners */
+  box-shadow: 0 0 8px rgba(0,0,0,0.2); /* Darker shadow for contrast */
+}
+
+/* ===== BUTTON STYLING ===== */
+/* Styles the clickable button */
+.cta-btn {
+  display: block;                  /* Makes button take full width */
+  background-color: #000000;       /* Black background */
+  color: white;                    /* White text */
+  padding: 10px 20px;              /* Space inside button */
+  border: none;                    /* Remove default border */
+  margin: 20px auto;               /* Space around button, center it */
+  border-radius: 5px;              /* Slightly rounded corners */
+  cursor: pointer;                 /* Show hand cursor on hover */
+  font-size: 16px;                 /* Text size */
+}
+
+/* Button hover effect - happens when mouse is over button */
+.cta-btn:hover {
+  background-color: #333333;       /* Dark gray on hover */
+}
+
+/* ===== FOOTER STYLING ===== */
+/* Styles the bottom section of the page */
+footer {
+  background-color: #000000;       /* Black background */
+  color: white;                    /* White text */
+  text-align: center;              /* Center the text */
+  padding: 10px;                   /* Space inside footer */
+}
