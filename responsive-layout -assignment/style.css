@@ -1,0 +1,191 @@
+/* ===== BEGINNER-FRIENDLY RESPONSIVE CSS ===== */
+/* This stylesheet creates a responsive website that works on all devices */
+
+/* ===== GLOBAL STYLES (Applied to entire page) ===== */
+
+/* Reset all elements to remove browser defaults */
+* {
+  margin: 0;
+  padding: 0;
+  /* This makes padding and border included in element's total width/height */
+  box-sizing: border-box;
+}
+
+/* Body styles - affects the whole page */
+body {
+  font-family: Arial, sans-serif;  /* Font style */
+  line-height: 1.6;               /* Space between lines of text */
+  background-color: #f9f9f9;      /* Light gray background */
+  color: #333;                    /* Dark gray text color */
+}
+
+/* ===== HEADER STYLES ===== */
+/* The top section of the website */
+header {
+  background-color: #0077b6;      /* Blue background */
+  color: white;                   /* White text */
+  text-align: center;             /* Center the text */
+  padding: 1.5rem;                /* Space inside the header */
+}
+
+/* ===== NAVIGATION STYLES (Using Flexbox) ===== */
+/* Flexbox helps arrange items in a row or column */
+
+.navbar ul {
+  display: flex;                  /* Turn list into horizontal menu */
+  justify-content: center;        /* Center the menu items */
+  background-color: #023e8a;      /* Dark blue background */
+  list-style: none;               /* Remove bullet points */
+}
+
+.navbar li {
+  margin: 0.5rem 1rem;           /* Space around each menu item */
+}
+
+.navbar a {
+  color: white;                   /* White text for links */
+  text-decoration: none;          /* Remove underline from links */
+  font-weight: bold;              /* Make text bold */
+  padding: 0.5rem;                /* Add clickable space around links */
+}
+
+/* Change link appearance when mouse hovers over it */
+.navbar a:hover {
+  text-decoration: underline;     /* Add underline on hover */
+  background-color: #03045e;      /* Darker blue background on hover */
+  border-radius: 4px;             /* Rounded corners on hover */
+}
+
+/* ===== MAIN LAYOUT (Using CSS Grid) ===== */
+/* CSS Grid creates a two-column layout that becomes one column on mobile */
+
+.grid-layout {
+  display: grid;                  /* Activate Grid layout */
+  /* Create 2 columns: main content (2/3) and sidebar (1/3) */
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;                      /* Space between grid items */
+  padding: 20px;                  /* Space around the grid */
+  max-width: 1200px;              /* Maximum width on large screens */
+  margin: 0 auto;                 /* Center the grid horizontally */
+}
+
+/* ===== MAIN CONTENT AREA ===== */
+.content {
+  background-color: white;        /* White background */
+  padding: 20px;                  /* Space inside the content area */
+  border-radius: 10px;            /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.content h2 {
+  color: #0077b6;                 /* Blue heading color */
+  margin-bottom: 1rem;            /* Space below heading */
+}
+
+/* ===== CARD CONTAINER (Flexbox inside Grid) ===== */
+/* This shows how Flexbox and Grid can work together */
+
+.card-container {
+  display: flex;                  /* Arrange cards in a row */
+  gap: 15px;                      /* Space between cards */
+  margin-top: 20px;               /* Space above cards */
+}
+
+.card {
+  flex: 1;                        /* Each card takes equal width */
+  background-color: #90e0ef;      /* Light blue background */
+  text-align: center;             /* Center text in cards */
+  padding: 20px;                  /* Space inside cards */
+  border-radius: 8px;             /* Rounded corners */
+  border: 2px solid #0077b6;      /* Blue border */
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+
+/* Card animation when hovering */
+.card:hover {
+  transform: translateY(-5px);    /* Lift card up slightly */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Enhanced shadow */
+}
+
+/* ===== SIDEBAR STYLES ===== */
+.sidebar {
+  background-color: #caf0f8;      /* Very light blue background */
+  padding: 20px;                  /* Space inside sidebar */
+  border-radius: 10px;            /* Rounded corners */
+  border: 1px solid #90e0ef;      /* Light blue border */
+}
+
+.sidebar h3 {
+  color: #023e8a;                 /* Dark blue heading */
+  margin-bottom: 1rem;            /* Space below heading */
+}
+
+/* ===== FOOTER STYLES ===== */
+footer {
+  background-color: #0077b6;      /* Blue background */
+  color: white;                   /* White text */
+  text-align: center;             /* Center the text */
+  padding: 1.5rem;                /* Space inside footer */
+  margin-top: 20px;               /* Space above footer */
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+/* These styles change the layout on different screen sizes */
+
+/* TABLET VIEW (Screens 900px wide and smaller) */
+@media (max-width: 900px) {
+  .grid-layout {
+    /* Switch to single column layout */
+    grid-template-columns: 1fr;
+    padding: 15px;                /* Reduce padding */
+  }
+  
+  .navbar ul {
+    flex-wrap: wrap;              /* Allow menu items to wrap to new line */
+  }
+  
+  .card-container {
+    gap: 10px;                    /* Reduce space between cards */
+  }
+}
+
+/* MOBILE VIEW (Screens 600px wide and smaller) */
+@media (max-width: 600px) {
+  /* Adjust header for mobile */
+  header h1 {
+    font-size: 1.5rem;            /* Smaller heading on mobile */
+  }
+  
+  /* Convert horizontal menu to vertical stack */
+  .navbar ul {
+    flex-direction: column;       /* Stack menu items vertically */
+    align-items: center;          /* Center align items */
+    gap: 10px;                    /* Space between stacked items */
+  }
+  
+  .navbar li {
+    margin: 0;                    /* Remove horizontal margins */
+  }
+  
+  /* Stack cards vertically on mobile */
+  .card-container {
+    flex-direction: column;       /* Stack cards in a column */
+  }
+  
+  .card {
+    padding: 15px;                /* Adjust card padding for mobile */
+  }
+  
+  /* Adjust overall spacing for mobile */
+  .grid-layout {
+    padding: 10px;                /* Less padding on mobile */
+    gap: 15px;                    /* Less space between items */
+  }
+}
+
+/* LARGE SCREENS (Optional - for very wide screens) */
+@media (min-width: 1200px) {
+  .grid-layout {
+    gap: 30px;                    /* More space on large screens */
+  }
+}

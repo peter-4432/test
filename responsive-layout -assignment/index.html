@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic setup for the webpage -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER SECTION -->
+  <!-- The top section of the webpage -->
+  <header>
+    <h1>My Responsive Website</h1>
+  </header>
+
+  <!-- NAVIGATION MENU -->
+  <!-- This will become a horizontal menu on desktop and stack on mobile -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT AREA -->
+  <!-- This uses CSS Grid to create a responsive layout -->
+  <main class="grid-layout">
+    
+    <!-- MAIN CONTENT SECTION -->
+    <!-- This is the primary content area (takes more space on desktop) -->
+    <section class="content">
+      <h2>Welcome to Our Website!</h2>
+      <p>This is the main content area. It will automatically adjust its layout on different screen sizes using CSS Grid technology.</p>
+
+      <!-- CARD CONTAINER -->
+      <!-- This uses Flexbox to arrange cards in a row (desktop) or column (mobile) -->
+      <div class="card-container">
+        <div class="card">Featured Item 1</div>
+        <div class="card">Featured Item 2</div>
+        <div class="card">Featured Item 3</div>
+      </div>
+    </section>
+
+    <!-- SIDEBAR SECTION -->
+    <!-- This appears on the side on desktop and moves below on mobile -->
+    <aside class="sidebar">
+      <h3>Quick Links</h3>
+      <p>This sidebar contains additional information or links. On small screens, it will move below the main content.</p>
+    </aside>
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <!-- The bottom section of the webpage -->
+  <footer>
+    <p>&copy; 2025 My Responsive Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
