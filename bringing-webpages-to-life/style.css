@@ -1,0 +1,76 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section {
+  margin-bottom: 50px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: white;
+}
+
+/* ------------------------------
+   Part 1: CSS3 Animations
+------------------------------ */
+
+/* Button hover effect with transition */
+.animated-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.animated-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+/* Box animation using keyframes */
+.animated-box {
+  width: 100px;
+  height: 100px;
+  background-color: #2196F3;
+  margin-top: 20px;
+  border-radius: 6px;
+  animation: pulse 3s infinite alternate;
+}
+
+/* Keyframe for a pulsing effect */
+@keyframes pulse {
+  from { transform: scale(1); opacity: 1; }
+  to { transform: scale(1.2); opacity: 0.6; }
+}
+
+/* ------------------------------
+   Part 3: Box Animation Triggered by JavaScript
+------------------------------ */
+
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  margin: 20px 0;
+  border-radius: 6px;
+  transition: transform 0.8s ease, background-color 0.8s ease;
+}
+
+/* Class added by JavaScript to animate the box */
+.move {
+  transform: translateX(200px) rotate(45deg);
+  background-color: orange;
+}
