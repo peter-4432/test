@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning JavaScript Events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>JavaScript Event Practice</h1>
+    <p>Let's learn how to make web pages interactive</p>
+  </header>
+
+  <main>
+    <section class="practice-box">
+      <h2>Click Events</h2>
+      <p>This button shows how click events work in JavaScript.</p>
+      
+      <button id="showMessageBtn">Click this button</button>
+      <p id="messageText">A message will show up here when you click</p>
+    </section>
+
+    <section class="practice-box">
+      <h2>Theme Switcher & Counter</h2>
+
+      <div class="example-area">
+        <h3>Dark/Light Mode</h3>
+        <p>Click to change the page theme</p>
+        <button id="themeSwitch">Change to dark mode</button>
+      </div>
+
+      <div class="example-area">
+        <h3>Number Counter</h3>
+        <p>Use the buttons to change the number</p>
+        <div class="counter-area">
+          <p class="number-display" id="countNumber">0</p>
+          <div class="counter-buttons">
+            <button id="minusBtn">-1</button>
+            <button id="zeroBtn">Reset</button>
+            <button id="plusBtn">+1</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="practice-box">
+      <h2>Form Checking</h2>
+      <p>Try submitting the form to see how validation works</p>
+      
+      <form id="userForm" class="input-form">
+        <div class="input-group">
+          <label for="userName">Your name:</label>
+          <input type="text" id="userName" placeholder="Type your name here">
+          <span class="help-text">Need at least 2 letters</span>
+        </div>
+
+        <div class="input-group">
+          <label for="userEmail">Email address:</label>
+          <input type="email" id="userEmail" placeholder="your.email@example.com">
+          <span class="help-text">Should look like an email</span>
+        </div>
+
+        <div class="input-group">
+          <label for="userPassword">Password:</label>
+          <input type="password" id="userPassword" placeholder="Create a password">
+          <span class="help-text">At least 6 characters needed</span>
+        </div>
+
+        <button type="submit" class="form-submit">Send info</button>
+      </form>
+      
+      <p id="formResult">The form results will show up here</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

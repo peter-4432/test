@@ -1,0 +1,210 @@
+/* Basic page setup */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+/* Dark mode styles - using class we'll add with JavaScript */
+body.dark-theme {
+  background-color: black;
+  color: white;
+}
+
+/* Header area */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+.dark-theme header {
+  border-bottom-color: #333;
+}
+
+/* Main content sections */
+.practice-box {
+  background: white;
+  margin: 25px 0;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dark-theme .practice-box {
+  background: black;
+  border-color: #333;
+  box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+}
+
+/* Example areas within sections */
+.example-area {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f0f0f0;
+  border-left: 4px solid #666;
+}
+
+.dark-theme .example-area {
+  background: #111;
+  border-left-color: #999;
+}
+
+/* Counter area styles */
+.counter-area {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.number-display {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 15px 0;
+  color: black;
+}
+
+.dark-theme .number-display {
+  color: white;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Button styles */
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #555;
+}
+
+.form-submit {
+  background: #000;
+  padding: 12px 25px;
+  font-size: 16px;
+}
+
+.form-submit:hover {
+  background: #333;
+}
+
+.dark-theme button {
+  background: #666;
+  color: black;
+}
+
+.dark-theme button:hover {
+  background: #888;
+}
+
+.dark-theme .form-submit {
+  background: white;
+  color: black;
+}
+
+.dark-theme .form-submit:hover {
+  background: #ddd;
+}
+
+/* Form styles */
+.input-form {
+  max-width: 500px;
+  margin: 20px 0;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  border-color: #000;
+  outline: none;
+}
+
+.dark-theme .input-group input {
+  border-color: #666;
+  background: black;
+  color: white;
+}
+
+.dark-theme .input-group input:focus {
+  border-color: white;
+}
+
+.help-text {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.dark-theme .help-text {
+  color: #999;
+}
+
+/* Result text styles */
+.result-text {
+  padding: 12px;
+  margin: 15px 0;
+  border-radius: 4px;
+  background: #f5f5f5;
+  border-left: 4px solid #333;
+}
+
+.dark-theme .result-text {
+  background: #111;
+  border-left-color: #999;
+}
+
+/* Make it responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  
+  .practice-box {
+    padding: 15px;
+    margin: 15px 0;
+  }
+  
+  .counter-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  button {
+    width: 200px;
+  }
+}
