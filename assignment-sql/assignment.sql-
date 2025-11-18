@@ -1,0 +1,25 @@
+-- Question 1:
+-- Creating a table named student with id, fullName, and age fields
+
+CREATE TABLE student (
+    id INT PRIMARY KEY,
+    fullName VARCHAR(100),
+    age INT
+);
+
+
+-- Question 2:
+-- Adding at least three records into the student table
+
+INSERT INTO student (id, fullName, age) VALUES
+(1, 'James Kariuki', 19),
+(2, 'Sarah Achieng', 18),
+(3, 'Brian Mwangi', 21);
+
+
+-- Question 3:
+-- Updating the age of the student whose id is 2, setting their new age to 20
+
+UPDATE student
+SET age = 20
+WHERE id = 2;
